@@ -1,0 +1,317 @@
+/** Styles for Web Resume ***/
+
+*
+{
+  font-family: Georgia sans-serif;
+  font-size: 11px;
+  color: #555555;
+  margin: auto;
+}
+
+body
+{
+  width: 100%;
+  margin: auto;
+}
+
+a:link
+{
+  font-size: 1em;
+  color: #7d8dc0;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline dotted;
+}
+
+btn
+{
+  margin: 5px;
+}
+
+section
+{
+  margin: 12px 0px;
+}
+
+ul
+{
+    list-style: none;
+    margin-left: -40px;
+}
+
+ul li
+{
+  padding: 1px;
+}
+
+@counter-style pin
+{
+  system: cyclic;
+  symbols: "📍";
+  suffix: " ";
+}
+
+@counter-style email
+{
+  system: cyclic;
+  symbols: "📧";
+  suffix: " ";
+}
+
+@counter-style phone
+{
+  system: cyclic;
+  symbols: "📱";
+  suffix: " ";
+}
+
+@counter-style link
+{
+  system: cyclic;
+  symbols: "🔗";
+  suffix: " ";
+}
+
+@counter-style star
+{
+  system: cyclic;
+  symbols: "\02606";
+  suffix: " ";
+  color: #f4cfa2;
+}
+
+@counter-style checkmark
+{
+  system: cyclic;
+  symbols: "\02713";
+  suffix: " ";
+  color: #a8c18a;
+}
+
+@counter-style club
+{
+  system: cyclic;
+  symbols: "\02667";
+  suffix: " ";
+}
+
+@counter-style diamond
+{
+  system: cyclic;
+  symbols: "\022C4";
+  suffix: " ";
+}
+
+#outline
+{
+  width: 816px;
+  height: 1056px;
+  margin: 25px auto;
+  border: solid 1px #cccccc;
+  padding: 25px;
+}
+
+#header
+{
+  width: 100%;
+  margin: auto;
+  vertical-align: middle;
+}
+
+#header .banner, #header .contact
+{
+  display: inline-block;
+}
+
+#header .banner
+{
+  width: 100%;
+  height: 120px;
+  background: url("../img/polygonal-design-768x120.png") no-repeat right;
+  z-index: 1;
+}
+
+#header .contact
+{
+  margin: 25px auto;
+  vertical-align: middle;
+}
+
+#header .contact ul
+{
+  margin: auto;
+}
+
+#header .contact, #header .contact a:link, #header .contact a:hover
+{
+  color: #7d8dc0;
+  z-index: 2;
+}
+
+#header .contact h3
+{
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#header .pin
+{
+  list-style: pin;
+}
+
+#header .email
+{
+  list-style: email;
+}
+
+#header .phone
+{
+  list-style: phone;
+}
+
+#header .linkedin
+{
+  list-style: link;
+}
+
+#header li
+{
+  font-size: 1.25em;
+  white-space: nowrap;
+}
+
+#info
+{
+  margin: 0px;
+}
+
+#info .heading, #info .description
+{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#info .heading
+{
+  width: 23%;
+  color: #79acc7;
+  text-align: center;
+}
+
+#info .heading h5
+{
+  font-weight: bold;
+}
+
+#info .description
+{
+  width: 76%;
+  color: #555555;
+}
+
+.award, .skill, .language, .eduction, .organization, .activity
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.summary li::before
+{
+  content: "\02606";
+  color: #f4cfa2;
+  font-size: 1.50em;
+  padding: 2px;
+}
+
+.occupation li::before
+{
+  content: "\02713";
+  color: #a8c18a;
+  font-size: 1.25em;
+  padding: 2px;
+}
+
+.volunteer li::before
+{
+  content: "\02713";
+  color: #a8c18a;
+  font-size: 1.25em;
+  padding: 2px;
+}
+
+.award li::before
+{
+  content: "\02606";
+  color: #e8bcd5;
+  font-size: 1em;
+  padding: 2px;
+}
+
+.education .university li::before
+{
+  content: "\02606";
+  color: #79acc7;
+  font-size: 1em;
+  padding: 2px;
+}
+
+.education .association li::before, .organization li::before
+{
+  content: "\02667";
+  color: #79acc7;
+  font-size: 1em;
+  padding: 2px;
+}
+
+.skill li, .language li
+{
+  float: left;
+  padding; 2px;
+}
+
+.skill li
+{
+    border: dotted 1px #cccccc;
+    color: #7d8dc0;
+    margin: 1px;
+}
+
+.activity li::before
+{
+  content: "\022C4";
+  color: #f4cfa2;
+  font-size: 1em;
+  padding: 2px;
+}
+
+/** Customized Tooltip Colors **/
+/* Top Tooltip */
+.tooltip.top > .tooltip-arrow {
+  border-top-color: #7d8dc0;
+}
+
+/* Right Tooltip */
+.tooltip.right > .tooltip-arrow {
+  border-right-color: #7d8dc0;
+}
+
+/* Bottom Tooltip */
+.tooltip.bottom > .tooltip-arrow {
+  border-bottom-color: #7d8dc0;
+}
+
+/* Left Tooltip */
+.tooltip.left > .tooltip-arrow {
+  border-left-color: #7d8dc0;
+}
+
+/* Tooltip Inner */
+.tooltip > .tooltip-inner {
+  background-color: #7d8dc0;
+  text-shadow: 0px 1px 1px #7d8dc0;
+  font-weight: normal;
+}
